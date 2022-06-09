@@ -13,11 +13,11 @@ import { ConstantCost, CustomCost } from "../api/Costs";
 //Some parameters
 //If you're wondering why the refund button doesn't appear, please refer to line 646 and you would know something's up
 
-var id = "CookieIdler";
+var id = "CookieIdlerOld";
 var name = "Cookie Idler";
 var description =
     'An ungodly large mess and nonmathematical of a theory involving copious amounts of cookies, tau, and other stuffs (NOT grandmas). A BIG credits to Orteil for bringing such a legendary game idea to life, ellipsis for suggesting ideas for the UI, skyhigh173 for reformatting the code so it looks better; and spqcey(randomname#9373) for proofreading and fixing a majority of the text.\nThis "theory" contains: All Cookie Clicker Buildings, a looot of upgrades, a loot of achievements, no scary maths, [DATA EXPUNGED], not thousands of lines of raw text because I\'m too lazy to encrypt it, bad JS coding, and e150 tau!\nWARNING : In ALL Circumstances, DO NOT attempt to purchase level 4 of the cookie tin upgrade, doing so may crash your game INSTANTLY(hang in there until you can afford level 5)';
-var authors = "Sainen Lv.420 #2684";
+var authors = Undoza6096";
 
 /*
 Big thinks to these people!
@@ -945,7 +945,7 @@ var init = () => {
                     }
                     calcCPS();
                 };
-                invest.maxLevel = 1000;
+                invest.maxLevel = 100;
                 break;
             case 6:
                 art = theory.CreateUpgrade(10006,cookie,new ExponentialCost(1e255,1));
@@ -1629,7 +1629,7 @@ var InsPopup = ui.createPopup({
             ui.createScrollView({
                 heightRequest: 400,
                 content: ui.createLabel({
-                    text: "Welcome to a theory all about cookies and more cookies!!!\n You have 3 currencies, cookies(C), heavenly chips(H), and sugar lumps(L), which you'll be spending on upgrades located on both tabs.\nCookies by far is the most important, as the majority of the gameplay revolves around it, from buildings to even tau! You can get your first batch of cookies by buying a cursor, which is gifted to you for free to kickstart your very own cookie empire! By maximizing CPS(C dot), you are sure to produce a whole lot of cookies.\nHeavenly Chips are a special type of cookie that forms whenever you sacrificed everything material you own in exchange for greater power(called publications). They can be used for all sorts of special upgrades, and might even end up boosting your CPS if you know enough.\nSugar lumps by far are the hardest to acquire, literally requiring luck in order to get some, but its powers of being able to outright boost your building's CPS by 10%, multiplicative! Rumor has it that it gets easier to acquire the more cookies you have.\nCheck back later for more in-game information!\n",
+                    text: "what this older version?",
                     horizontalTextAlignment: TextAlignment.CENTER,
                     padding: Thickness(10, 2, 10, 2),
                     fontSize: 14,
@@ -1842,7 +1842,7 @@ var secondaryEq = (mode) => {
             );
             break;
         case 5://Ygg + Chronos
-            let ys = " Y_{g}"
+            let ys = " Y_{g^{2}}"
             return `B(3) \\leftarrow B(3)P_{3}^{1.4 + (0.1\\times${ys})}(B[6]+B[2])^{3.2 + 0.2${ys}^{0.9}}(1+t)^{1.4}${(ChronosAge.level > 0)?`\\\\ B(i) \\leftarrow B(i)(1+t^{1.1}), \\quad i \\neq 2`:``}`;
             break;
         case 6://Terra
